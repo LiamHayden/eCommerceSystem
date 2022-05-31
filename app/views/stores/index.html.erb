@@ -1,0 +1,63 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<%# nav_bar needs to be created %>
+<%=  render 'articles/nav_bar' %> 
+
+<%# newest phone %>
+<div class="container-fluid">
+  <div class="row p-5 mb-5 border-bottom">
+    <div class="text-center">
+      <a class="text-decoration-none text-reset" href="#">
+        <%= image_tag("oneplus-nordce.png", alt: "OnePlus Nord CE 2 Lite 5G", style: "width:330px;") %>
+        <h2 class="header">OnePlus Nord CE 2 Lite 5G</h2>
+        <p class="para">€299.00</p>
+        <button type="button" class="btn btn-primary btn-sm">SHOP NOW!</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<%# Rest of contents %>
+<div class="container">
+<%# All filters %>
+  <%= render 'all_filters' %>
+
+  <%# Sort by %>
+    <div class="col d-flex justify-content-end">
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-bs-toggle="dropdown">
+        Sort by: 
+        </button>
+        <ul class="dropdown-menu">
+          <li class="dropdown-item" id="relevancy">Relevancy</li>
+          <li class="dropdown-item" id="lowest-price">Lowest Price</li>
+          <li class="dropdown-item" id="highest-price">Highest Price</li>
+          <li class="dropdown-item" id="top-customer-reviews">Top Customer Reviews</li>
+          <li class="dropdown-item" id="most-recent<">Most Recent</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <%# items for sale %>
+  <div class="row p-5 d-flex justify-content-center align-content-center">
+
+    <%= render 'oneplus_nord_ce' %>
+
+    <%= render 'iphone_xsmax_case' %>
+
+    <%= render 'iphone_charger' %>
+
+    <%# next line %>
+
+    <%= render 'oneplus_nord_ce' %>
+
+    <%= render 'iphone_xsmax_case' %>
+
+    <%= render 'iphone_charger' %>
+  </div>
+
+</div>
+
+<%# footer needs to be created %>
+<%=  render 'articles/footer' %>

@@ -1,0 +1,68 @@
+<div class="row d-flex">
+  <div class="col">
+    <div class="offcanvas offcanvas-start" id="demo">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Filters</h1>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <form>
+          <form>
+            <p class="m-0 fw-bold">Special Offers</p>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="check1" name="option1" value="On Sale">
+              <label class="form-check-label pb-3">On Sale</label>
+            </div>
+          </form>
+
+          <form>
+            <p class="m-0 fw-bold">Price</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="radio1" name="optradio" value="option1" checked>
+              <label class="form-check-label" for="radio1">Any Price</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="radio2" name="optradio" value="option2">
+              <label class="form-check-label" for="radio2">€300.00 - €500.00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="radio3" name="optradio" value="option3">
+              <label class="form-check-label" for="radio3">€500.00 - €700.00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="radio4" name="optradio" value="option4">
+              <label class="form-check-label" for="radio4">€700.00 - €900.00</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="radio5" name="optradio" value="option5">
+              <label class="form-check-label pb-3" for="radio5">+€900.00</label>
+            </div>
+          </form>
+            
+          <form>
+            <p class="m-0 fw-bold">Item Type</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="radio8" name="optradio" value="option8" checked>
+              <label class="form-check-label" for="radio8">All Types</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="radio6" name="optradio" value="option6">
+              <label class="form-check-label" for="radio6">Mobile Phones</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="radio7" name="optradio" value="option7">
+              <label class="form-check-label pb-3" for="radio7">Accessories</label>
+            </div>
+          </form>
+          <div class="d-flex justify-content-center align-content-center">
+            <button type="submit" class="btn btn-secondary m-4 btn-lg" data-bs-toggle="offcanvas" data-bs-target="#demo" style="width:100px">Cancel</button>
+            <button type="submit" class="btn btn-secondary m-4 btn-lg" data-bs-toggle="offcanvas" data-bs-target="#demo" style="width:100px">Apply</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <button class="btn btn-primary btn-sm" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    All filters
+    </button>
+</div>
